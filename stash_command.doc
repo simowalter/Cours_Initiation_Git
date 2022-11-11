@@ -1,0 +1,6 @@
+git stash : to save the current uncommitted changes into some kind of magic box
+git stash list: list of things stored in the magix box
+git stash pop : restore the latest uncommitted changes added to the magic boxe
+git stash appy stash@{id} : restore a particular uncommitted changes from the magic box
+git stash drop : empty the magic box
+git checkout filename : to undo changes made to that particular file.
