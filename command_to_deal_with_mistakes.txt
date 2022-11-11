@@ -6,3 +6,4 @@ git stash drop : empty the magic box
 git checkout filename : to undo changes made to that particular file.
 git reset --hard HEAD^ : save the latest commit made into a magix box (undo the commit)
 git reset --hard idcommit: paste the commit identified by idcommit into the current branch.
+git commit --amend -m "nouveau commit" pour changer le text d'un commit qu'on vient de faire
