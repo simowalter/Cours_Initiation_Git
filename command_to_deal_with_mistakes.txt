@@ -7,3 +7,7 @@ git checkout filename : to undo changes made to that particular file.
 git reset --hard HEAD^ : save the latest commit made into a magix box (undo the commit)
 git reset --hard idcommit: paste the commit identified by idcommit into the current branch.
 git commit --amend -m "nouveau commit" pour changer le text d'un commit qu'on vient de faire
+En cas d'oubli d'ajout d'un fichier lors du dernier commit:
+
+git add file_to_add
+git commit --amend --no-edit : ajouter le fichier au dernier commit sans modifier la description
