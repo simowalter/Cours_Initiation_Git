@@ -7,3 +7,33 @@ git checkout filename : to undo changes made to that particular file.
 git reset --hard HEAD^ : save the latest commit made into a magix box (undo the commit)
 git reset --hard idcommit: paste the commit identified by idcommit into the current branch.
 git commit --amend -m "nouveau commit" pour changer le text d'un commit qu'on vient de faire
+
+=======
+En cas d'oubli d'ajout d'un fichier lors du dernier commit:
+
+git add file_to_add
+git commit --amend --no-edit : ajouter le fichier au dernier commit sans modifier la description
+
+Pour l'acces à distance ne fonctionne pas : generer des clés ssh pour
+securiser la connexion entre votre machine et votre depot distant
+
+1. taper la commande:
+ssh-keygen -t rsa -b 4096 -C "johndoe@example.com"
+
+2. saisir un mot de passe [la saisie est invisible pour question de securité] (2 fois)
+
+3. suivez le chemin ou est stocké la cle et ouvrez celui avec l'extension pubish
+( il s'agit là de la clé publique) et copier le contenu. 
+Il y a aussi une clé privée: n'y touchez pas
+
+4. Aller sur le compte GitHub 
+- sur votre avatar (en haut à droite)
+- puis sur "setting"
+- puis key "SSH et GPG keys"
+- ensuite bouton "new ssh keys"
+- saisissez un titre
+- coller la clé publique dans le champ "keys"
+- cliquez enfin sur "add ssh key"
+- saisissez votre mot de passe
+
+Et voilà c'est terminée.
