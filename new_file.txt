@@ -1,2 +1,3 @@
-This is just for a test of stash command in Git which helps
-manage unwanted changed added into staging (before committing).
+This is a file just for a test of stash command in Git which helps
+manage unwanted changed add into staging in the main branch
+before the commit was done.
